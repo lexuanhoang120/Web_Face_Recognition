@@ -2,3 +2,4 @@
 - check node : node -v
 - install packages node: npm install 
 - npm start
+- Note: if the server is run on a different network, change IP address on .env.development.local file

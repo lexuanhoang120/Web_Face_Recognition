@@ -1,0 +1,766 @@
+.modal-detail {
+  margin: 20px 0;
+}
+
+.del-icon {
+  cursor: pointer;
+}
+.del-icon:hover {
+  color: $color-button;
+}
+
+.face_list_image {
+  width: 130px;
+  height: 130px;
+}
+
+.face_list_search {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 20px;
+  padding: 34px 0 0;
+  z-index: 999;
+  flex-wrap: wrap;
+
+  @media only screen and (max-width: 589px) {
+    flex-direction: column;
+    .MuiOutlinedInput-root,
+    .form-control,
+    .c-button {
+      width: 100% !important;
+    }
+  }
+}
+
+.face_list_storage_btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.form-wrap .face_list_input {
+  width: 100%;
+}
+
+.form-wrap .face_list_select {
+  width: 100%;
+}
+
+.box-select .MuiFormControl-root {
+  width: 100%;
+}
+
+.info-item__input {
+  display: flex;
+  // align-items: center;
+  justify-content: space-between;
+  margin: 0 20px 30px;
+}
+
+// .item-modal__exp {
+//   border-top: 1px solid #d9d9d9;
+//   padding-top: 30px;
+// }
+
+// // @media (max-width: 820px) {
+// //   .label {
+// //     margin-bottom: 15px;
+// //   }
+// // }
+
+// .container__button-add {
+//   display: flex;
+//   justify-content: center;
+
+//   @media (max-width: $breakpoint-xl) and (min-width: 820px) {
+//     min-width: 355px;
+//   }
+
+//   @media (max-width: 820px) {
+//     width: 100%;
+//   }
+// }
+
+// #modal .info-item-section .none-padding-tb {
+//   padding-top: 0;
+//   padding-bottom: 0;
+// }
+
+// #modal .info-item-section .none-padding-lr {
+//   @media only screen and (min-width: 900px) {
+//     padding-left: 0;
+//     padding-right: 0;
+//   }
+// }
+
+// #modal .info-item-section .none-padding {
+//   padding: 0;
+// }
+
+// #modal .align-center {
+//   display: flex;
+//   align-items: center;
+// }
+
+// #modal .width-unset {
+//   @media (min-width: 820px) {
+//     width: unset;
+//   }
+// }
+
+// #modal .width-unset-xl {
+//   @media (min-width: $breakpoint-xl) {
+//     width: unset;
+//   }
+// }
+
+// #modal .min-width_label {
+//   min-width: 100px;
+// }
+
+// // #modal .info-row__j-start {
+// //   @media (min-width: $breakpoint-xl) {
+// //     justify-content: flex-start;
+// //   }
+// // }
+
+// .new-item__Modal {
+//   // border-top: 1px solid #d9d9d9;
+// }
+
+// .info-row__header {
+//   display: flex;
+//   justify-content: flex-start;
+//   align-items: center;
+//   // border-bottom: 1px solid #d9d9d9;
+//   // margin-bottom: 10px;
+//   .info-item__header {
+//     display: flex;
+//     width: 94%;
+
+//     .info-item__input {
+//       gap: 15px;
+//       &:nth-child(2) {
+//         margin-left: 15px;
+
+//         .info-row__flex {
+//           display: flex;
+//         }
+//         .MuiAutocomplete-root {
+//           min-width: 150px;
+//         }
+
+//         .MuiAutocomplete-root {
+//           width: 150px;
+//         }
+//         .MuiTextField-root,
+//         .info-item__input .MuiFormControl-root {
+//           min-width: 150px;
+//         }
+//       }
+//     }
+
+//     @media only screen and (max-width: $breakpoint-xl) {
+//       flex-direction: column;
+//       width: 100%;
+//       .info-item__input {
+//         &:nth-child(2) {
+//           margin-left: 0px;
+//           align-items: flex-end;
+//           flex-direction: column;
+//           .MuiAutocomplete-root {
+//             min-width: calc(355px - 40px);
+//           }
+
+//           .MuiAutocomplete-root {
+//             width: calc(355px - 40px);
+//           }
+//           .MuiTextField-root,
+//           .info-item__input .MuiFormControl-root {
+//             min-width: calc(355px - 40px);
+//           }
+//         }
+//       }
+//     }
+
+//     @media only screen and (max-width: 820px) {
+//       flex-direction: column;
+//       align-items: flex-start;
+//       .info-item__input {
+//         &:nth-child(2) {
+//           .info-row__flex {
+//             width: 100%;
+//           }
+//           .MuiAutocomplete-root {
+//             min-width: calc(100% - 40px);
+//           }
+
+//           .MuiAutocomplete-root {
+//             width: calc(100% - 40px);
+//           }
+//           .MuiTextField-root,
+//           .info-item__input .MuiFormControl-root {
+//             min-width: calc(100% - 40px);
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
+
+// .btn-open-typedevice {
+//   display: flex;
+//   align-items: center;
+//   margin-left: 11px;
+// }
+
+// #modal .info-item-section {
+//   &.grid {
+//     padding: 30px 0;
+
+//     @media (max-width: 900px) {
+//       padding: 30px 20px;
+//     }
+//   }
+
+//   .grid__wrap:not(.grid__wrap:first-child) {
+//     @media (max-width: $breakpoint-xl) {
+//       padding-top: 19px;
+//     }
+//   }
+
+//   .info-item__grid {
+//     @media (max-width: 820px) {
+//       flex-direction: column;
+
+//       .MuiFormControl-root {
+//         width: 100%;
+//       }
+//     }
+//   }
+// }
+
+// .info-item-section + .info-item-section {
+//   border-top: 1px solid #d9d9d9;
+
+//   .info-item {
+//     padding-top: 30px;
+//     padding-bottom: 30px;
+//   }
+// }
+
+// .info-item-section:first-child {
+//   .info-item {
+//     padding-top: 0;
+//     padding-bottom: 30px;
+//   }
+// }
+
+// .info-item-section:last-child {
+//   .info-item {
+//     padding-top: 30px;
+//     padding-bottom: 0;
+//   }
+// }
+
+// .info-item {
+//   position: relative;
+//   border: 1px solid $color-primary;
+//   padding: 20px 40px 0;
+//   margin-bottom: 30px;
+//   @media only screen and (max-width: $breakpoint-xl) {
+//     padding: 20px 20px 0;
+//     width: 100%;
+//   }
+
+//   &__grid {
+//     display: flex;
+//     justify-content: space-between;
+//   }
+
+//   .select-small > .MuiFormControl-root {
+//     width: 355px;
+
+//     @media only screen and (min-width: $breakpoint-xl) {
+//       width: 146px;
+//       min-width: unset;
+//     }
+
+//     @media (max-width: 820px) {
+//       width: 100%;
+//       min-width: unset;
+//     }
+//   }
+
+//   .select-medium > .MuiFormControl-root {
+//     width: 355px;
+
+//     @media only screen and (min-width: $breakpoint-xl) {
+//       width: 190px;
+//       min-width: unset;
+//     }
+
+//     @media (max-width: 820px) {
+//       width: 100%;
+//       min-width: unset;
+//     }
+//   }
+
+//   .text-input-small > .MuiFormControl-root {
+//     width: 355px;
+
+//     @media only screen and (min-width: $breakpoint-xl) {
+//       width: 156px;
+//       min-width: unset;
+//     }
+//   }
+
+//   .icon-row {
+//     width: 100%;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     padding: 15px 0;
+//     // border-bottom: 1px solid #d9d9d9;
+
+//     .button-add {
+//       position: relative;
+//       color: #147db8;
+//       font-size: 25px;
+//       cursor: pointer;
+//     }
+//   }
+//   .info-row {
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: flex-start;
+
+//     @media only screen and (max-width: $breakpoint-xl) {
+//       flex-direction: column;
+//     }
+
+//     &.w-100 {
+//       @media (min-width: $breakpoint-xl) {
+//         gap: 50px;
+//       }
+
+//       @media (max-width: 820px) {
+//         width: 100%;
+//       }
+//     }
+
+//     .info-row__flex {
+//       position: relative;
+//       display: flex;
+//       justify-content: space-between;
+//       align-items: center;
+//       gap: 15px;
+
+//       .MuiAutocomplete-root {
+//         min-width: 170px;
+//         width: 170px;
+//       }
+//       .MuiTextField-root,
+//       .MuiFormControl-root {
+//         min-width: 170px;
+//       }
+
+//       .MuiInputBase-input {
+//         width: 140px;
+//       }
+//     }
+
+//     @media only screen and (max-width: 820px) {
+//       .info-row__flex {
+//         position: relative;
+//         align-items: center;
+//         flex-direction: column;
+//         gap: 15px;
+//         width: 100%;
+
+//         .MuiAutocomplete-root {
+//           min-width: 100%;
+//           width: 100%;
+//         }
+//         .MuiTextField-root,
+//         .MuiFormControl-root {
+//           min-width: 100%;
+//         }
+
+//         .MuiInputBase-input {
+//           width: 100%;
+//         }
+//       }
+//     }
+
+//     @media (min-width: 820px) {
+//       &.label-input {
+//         min-width: 200px;
+//         .label {
+//           max-width: 150px;
+//         }
+//       }
+//     }
+//   }
+//   .info-row .c-form-control,
+//   .info-row .MuiOutlinedInput-root {
+//     @media only screen and (max-width: $breakpoint-sm) {
+//       width: 100%;
+//     }
+//   }
+
+//   .info-row__j-start {
+//     display: flex;
+//     justify-content: flex-start;
+//     align-items: flex-start;
+
+//     @media (max-width: $breakpoint-xl) {
+//       justify-content: space-between;
+//     }
+
+//     @media (max-width: 820px) {
+//       flex-direction: column;
+//     }
+//   }
+
+//   // .MuiGrid-root.MuiGrid-item:nth-child(2n + 1) {
+//   //   padding-right: 43.5px;
+//   // }
+
+//   // .MuiGrid-root.MuiGrid-item:nth-child(2n) {
+//   //   padding-left: 43.5px;
+//   // }
+
+//   &__input {
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: flex-start;
+//     padding-bottom: 19px;
+//     gap: 50px;
+//     width: 45%;
+
+//     &.none-label {
+//       @media only screen and (max-width: $breakpoint-xl) {
+//         justify-content: flex-end;
+//         flex-wrap: wrap;
+//         gap: unset;
+//       }
+//     }
+
+//     &.mg-r-15 {
+//       margin-right: 15px;
+//     }
+
+//     @media only screen and (max-width: $breakpoint-xl) {
+//       width: 100%;
+//     }
+//     @media only screen and (max-width: 951px) {
+//       gap: 0;
+//     }
+//     @media only screen and (max-width: 820px) {
+//       flex-direction: column;
+//       align-items: flex-start;
+//     }
+
+//     &.input__header {
+//       padding-bottom: 10px;
+//     }
+
+//     &__header {
+//       color: $color-primary;
+//       font-weight: 600;
+//     }
+
+//     .MuiFormHelperText-root {
+//       margin-left: 0;
+//       margin-top: 7px;
+//       font-size: 0.8rem;
+//     }
+
+//     .MuiInputBase-input {
+//       width: 322px;
+//       height: 28px;
+//       padding: 9px 17px;
+//       border: none;
+//       border-radius: 0;
+//       text-overflow: ellipsis;
+//       white-space: nowrap;
+//       overflow: hidden;
+
+//       &::placeholder {
+//         // color: #6c757d;
+//         overflow: hidden;
+//         opacity: 1;
+//       }
+//       @media only screen and (max-width: $breakpoint-sm) {
+//         width: 100%;
+//         height: 30px;
+//       }
+//     }
+//     .MuiAutocomplete-root {
+//       min-width: 355px;
+//       &::placeholder {
+//         color: #6c757d;
+//         overflow: hidden;
+//         opacity: 1;
+//       }
+//       @media only screen and (max-width: 820px) {
+//         width: 100%;
+//         min-width: unset;
+//       }
+//     }
+//     .MuiTextField-root,
+//     .MuiFormControl-root {
+//       min-width: 355px;
+//       &::placeholder {
+//         color: #6c757d;
+//         overflow: hidden;
+//         opacity: 1;
+//       }
+//       @media only screen and (max-width: 820px) {
+//         width: 100%;
+//         min-width: unset;
+//       }
+//     }
+//     .MuiAutocomplete-input {
+//       height: 100%;
+//       padding: 5px 4px 5px 6px !important;
+//     }
+//     .MuiSelect-root {
+//       &::placeholder {
+//         color: #6c757d;
+//         overflow: hidden;
+//         opacity: 1;
+//       }
+//       @media only screen and (max-width: $breakpoint-sm) {
+//         width: 100%;
+//       }
+//     }
+
+//     &.disable-input .MuiInputBase-input {
+//       background-color: $color-disable-input;
+//     }
+//   }
+//   &__input.time {
+//     gap: 10px;
+//     width: 355px;
+//     padding-bottom: 0;
+
+//     @media only screen and (max-width: 820px) {
+//       flex-direction: row;
+//       width: 100%;
+//     }
+
+//     .info-item__input {
+//       width: 50%;
+//       padding-bottom: 0;
+//     }
+
+//     .MuiFormControl-root {
+//       min-width: unset;
+//       width: 100%;
+//     }
+
+//     .MuiInputBase-input {
+//       width: unset;
+//     }
+//   }
+//   // &__input.select-small {
+//   //   .MuiFormControl-root {
+//   //     min-width: 150px;
+//   //   }
+//   // }
+//   &__info {
+//     position: relative;
+//     width: 355px;
+//     border: none !important;
+//     display: flex;
+//     align-items: center;
+//     justify-content: space-between;
+//     padding: 0 10px;
+//     @media only screen and (max-width: 820px) {
+//       width: 100%;
+//     }
+//   }
+//   .info-item__total-file {
+//     max-height: 10rem;
+//     overflow-y: auto;
+//     overflow-x: hidden;
+//     margin-top: 20px;
+//   }
+//   .info-item__uploadfile {
+//     display: flex;
+//     flex-direction: column;
+
+//     @media only screen and (max-width: 820px) {
+//       width: 100%;
+//     }
+//   }
+//   .error_file .info-deletefile {
+//     padding: 20px 0 0;
+//   }
+//   .info-deletefile {
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+//     padding: 0 0 15px;
+//     @media only screen and (max-width: 820px) {
+//       width: 100%;
+//       flex-direction: column;
+//       align-items: flex-start;
+//     }
+//     .MuiSvgIcon-root {
+//       width: 1.2rem;
+//       height: 1.2rem;
+//     }
+//   }
+//   .info-item__label {
+//     display: block;
+//     width: 200px;
+//     overflow: hidden;
+//     text-overflow: ellipsis;
+//     white-space: nowrap;
+//     color: #1976d2;
+//     @media only screen and (max-width: 820px) {
+//       width: 400px;
+//     }
+//   }
+//   .info-item__size {
+//     white-space: nowrap;
+//   }
+//   &__file {
+//     display: flex;
+//     padding: 0;
+//     border-radius: 100%;
+//     color: #1976d2;
+//   }
+//   &__clear {
+//     align-items: center;
+//     display: flex;
+//     color: #ff0000;
+//     cursor: pointer;
+//   }
+
+//   #info-item &__input .MuiSelect-select {
+//     display: flex;
+//     align-items: center;
+//     width: 100%;
+//     height: 32px;
+//     padding: 7px 16px;
+//     color: #000;
+//     opacity: 1;
+//     max-width: 100%;
+//     border-radius: 5px;
+//     @media only screen and (max-width: $breakpoint-sm) {
+//       width: 100%;
+//     }
+//   }
+
+//   #info-item &__input .type-device {
+//     display: flex;
+//     justify-content: space-between;
+//     width: 356px;
+//     align-items: flex-start;
+//     @media only screen and (max-width: 820px) {
+//       width: 100%;
+//     }
+//     .MuiFormControl-root {
+//       min-width: 305px;
+//     }
+//   }
+
+//   #info-item &__input .type-device > .MuiOutlinedInput-root {
+//     flex: 1;
+//     width: 305px;
+//   }
+
+//   #info-item &__input .MuiTextarea-textarea {
+//     min-width: 356px;
+//     max-width: 356px;
+//     height: 48px;
+//     padding: 10px 16px;
+//     font-size: 16px;
+//     line-height: 100%;
+//     align-items: center;
+//     border-radius: 4px;
+//     line-height: 28px;
+//     border: 1px solid #bcbfc5;
+
+//     &:hover {
+//       border-color: unset;
+//     }
+
+//     &:focus {
+//       border-color: #1976d2;
+//     }
+
+//     &:focus-visible {
+//       outline: unset;
+//     }
+
+//     @media only screen and (max-width: $breakpoint-sm) {
+//       width: 100%;
+//       min-width: unset;
+//       max-width: unset;
+//     }
+//   }
+//   .c-form-control {
+//     @media only screen and (max-width: 820px) {
+//       width: 100%;
+//     }
+//   }
+//   #info-item &__input .input-date {
+//     width: 356px;
+//     height: 48px;
+//     @media only screen and (max-width: 820px) {
+//       width: 100%;
+//     }
+
+//     .MuiInputBase-input {
+//       height: 48px;
+//       box-sizing: border-box;
+//       border-top-left-radius: 4px;
+//       border-bottom-left-radius: 4px;
+//     }
+
+//     .MuiGrid-root.MuiGrid-item:last-child &__input {
+//       padding-bottom: 20px;
+//     }
+//   }
+
+//   #info-item &__input {
+//     input[type="file"] {
+//       width: 356px;
+//       height: 48px;
+//       box-sizing: border-box;
+//       opacity: 0;
+//       @media only screen and (max-width: $breakpoint-sm) {
+//         width: 100%;
+//       }
+//     }
+//   }
+
+//   .MuiGrid-root.MuiGrid-item:last-child &__input {
+//     display: flex;
+//     justify-content: space-between;
+//     width: 100%;
+//     padding-bottom: 20px;
+//     @media only screen and (max-width: $breakpoint-sm) {
+//       flex-direction: column;
+//       width: unset;
+//       margin-left: 10px;
+//       .MuiOutlinedInput-root {
+//         width: 100%;
+//       }
+//     }
+//   }
+// }
+
+// .form .modal-device {
+//   height: unset !important;
+// }
+// .Mui-disabled {
+//   background-color: $color-disable-input;
+// }

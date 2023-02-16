@@ -1,0 +1,9 @@
+#label-checkbox {
+    align-items: flex-start;
+    width: 350px;
+    min-width: 350px;
+
+    & .label-checkbox__input {
+        padding: 0 16px;
+    }
+}

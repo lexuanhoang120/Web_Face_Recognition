@@ -1,0 +1,37 @@
+.sidebar {
+  width: 250px;
+  color: white;
+
+  .MuiMenuItem-root {
+    padding: 0;
+
+    a {
+      color: white;
+      width: 100%;
+      padding: 6px 8px 6px 24px;
+      text-decoration: none;
+    }
+  }
+
+  .user {
+    padding: 10px 16px;
+    display: flex;
+    align-items: center;
+
+    .avatar {
+      margin-right: 10px;
+    }
+
+    .name {
+      font-weight: 600;
+    }
+  }
+
+  .MuiListItemButton-root {
+    justify-content: space-between;
+  }
+}
+
+.MuiTouchRipple-child {
+  background-color: #fff !important;
+}

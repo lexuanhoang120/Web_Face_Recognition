@@ -1,0 +1,23 @@
+.form-wrap .cupload-image {
+  font-size: 130px;
+}
+
+.form-wrap .cupload-bgImg {
+  background-repeat: no-repeat;
+  background-clip: border-box;
+  background-origin: border-box;
+  background-size: contain;
+}
+
+.form-wrap .cupload_image_list {
+  display: flex;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.form-wrap .cupload_image_item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

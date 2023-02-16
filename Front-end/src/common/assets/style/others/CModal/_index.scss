@@ -1,0 +1,57 @@
+.modal {
+  .modal-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 31px 47px;
+
+    &.lg {
+      width: 1024px;
+    }
+  }
+
+  .modal-title {
+    text-align: center;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    color: $color-primary;
+  }
+
+  .modal__input-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+
+    > :first-child {
+      width: 45%;
+    }
+
+    > :last-child {
+      width: 55%;
+    }
+
+    .modal__input-label {
+      color: black;
+      font-weight: 500;
+      white-space: normal;
+      max-width: 105px;
+    }
+
+    .modal__input-btn {
+      width: 187px;
+      height: 40px;
+      border-radius: 5px;
+
+      &.cancel {
+        border-color: $color-text;
+        color: $color-text;
+      }
+    }
+  }
+}

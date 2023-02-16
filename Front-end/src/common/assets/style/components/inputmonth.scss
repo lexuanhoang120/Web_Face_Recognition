@@ -1,0 +1,29 @@
+.input-month {
+  width: 356px;
+  position: relative;
+  height: 48px;
+  display: flex;
+  @media (max-width: $breakpoint-sm) {
+    width: 100%;
+  }
+
+  input {
+    width: 100%;
+  }
+
+  &__unit {
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 95px;
+    line-height: 48px;
+    text-align: center;
+    background-color: $color-disable-input;
+    border-radius: 0 4px 4px 0;
+    border-left-color: #bcbfc5;
+    z-index: -1;
+    height: 45px;
+  }
+}

@@ -1,0 +1,11 @@
+.c-filter-select {
+  & *:not(svg) {
+    font-family: "Montserrat" !important;
+    font-size: 15px !important;
+    line-height: 18.75px;
+    color: black !important;
+  }
+  label {
+    font-weight: 600 !important;
+  }
+}

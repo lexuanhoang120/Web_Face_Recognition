@@ -1,0 +1,105 @@
+@import "/src/common/assets/style/index.scss";
+
+img {
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.login {
+  height: 82.5vh;
+  display: flex;
+  align-items: center;
+  background-color: #f6f6f6;
+}
+.login-wrap {
+  border: 1px solid #c9c5c9;
+  border-radius: 10px;
+}
+.login-img {
+  height: 100%;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.login-logo {
+  padding: 0;
+  display: flex;
+  width: 66%;
+  margin: 10px auto 0;
+}
+.login-form-wrap {
+  padding: 4rem 2rem;
+  width: 100%;
+}
+.login-form {
+  padding: 0 3.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+
+  @media only screen and (max-width: $breakpoint-sm) {
+    padding: 0;
+  }
+}
+.login-title {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+  color: #202104;
+  margin: 14px 0;
+}
+.login-sub {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.5px;
+  color: #202104;
+  margin-bottom: 20px;
+}
+.btn {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  position: relative;
+}
+.login-btn {
+  text-transform: none !important;
+  padding: 10px 24px !important;
+  font-weight: 400 !important;
+  font-size: 14px !important;
+  justify-content: right !important;
+  line-height: 20px !important;
+}
+.form-input {
+  margin: 12px 0 !important;
+  width: 100%;
+}
+.login-subpass {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.login-forgotpass {
+  color: $color-forgotpass;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  width: 100%;
+  margin: 10px 0 56px;
+}
+.login .MuiContainer-root {
+  @media only screen and (max-width: $breakpoint-sm) {
+    padding-left: 32px;
+  }
+}

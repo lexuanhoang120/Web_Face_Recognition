@@ -1,0 +1,59 @@
+.filter-container {
+  @include xs() {
+    .filter-area {
+      .filter-select {
+        .filter-label {
+          font-size: 14px;
+          padding: 10px 10px;
+          min-width: 90px;
+        }
+      }
+
+      .filter-duration {
+        & .MuiFormControl-root {
+          margin-left: 5px;
+        }
+
+        justify-content: flex-start;
+      }
+    }
+  }
+
+  @include sm() {
+    .filter-area {
+      .filter-duration {
+        & .MuiFormControl-root {
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+
+  @include lg() {
+    .filter-area {
+      justify-content: flex-end;
+
+      .filter-select {
+        .filter-label {
+          font-size: 15px;
+          padding: 10px 12px;
+          min-width: 96px;
+        }
+      }
+    }
+  }
+
+  @include xl() {
+    .filter-area {
+      justify-content: flex-end;
+
+      .filter-select {
+        margin-left: auto;
+      }
+
+      .filter-duration {
+        justify-content: end;
+      }
+    }
+  }
+}

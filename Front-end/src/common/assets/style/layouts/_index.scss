@@ -1,0 +1,21 @@
+@import "Main/index";
+
+.sub-nav {
+  text-align: center;
+  margin-bottom: 16px;
+  &.menu-button {
+    margin-bottom: 0;
+  }
+
+  button {
+    border-radius: 5px;
+    padding: 11px 20px;
+  }
+
+  a.active {
+    button {
+      background-color: $color-primary;
+      color: white;
+    }
+  }
+}

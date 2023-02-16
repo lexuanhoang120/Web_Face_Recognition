@@ -1,0 +1,56 @@
+// #region Color
+$color-button: #147db8;
+$color-primary: #323232;
+
+$color-text: #212529;
+$color-select: #1e1918;
+$color-hover-green: #dfe5e4;
+$color-light-blue: #00d1ff;
+
+// Info
+$color-success: #009278;
+$color-info: #0157bc;
+$color-error: #bc0101;
+$color-warning: #fbb500;
+$color-primary-tint: #edf6fb;
+$color-error-disabled: #efd9d9;
+$color-primary-disabled: #b9d8ea;
+$color-warning-disabled: #fee9b3;
+$color-background: #f1f1f1;
+$color-disable-input: #e9ecef;
+
+// Netural
+$color-white: #ffffff;
+$color-light-gray: #bcbfc5;
+$color-mid-gray: #a2a7b2;
+$color-dark-gray: #878b94;
+$color-black: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+  #000000;
+// #endregion Color
+$color-checkbox: #3b85fe;
+$color-green: #11b785;
+$color-red: #b72511;
+$color-tagColor: #c4d9e4;
+$color-forgotpass: #1a73e8;
+$color-gray: #d7d7d7;
+
+// #endregion Color
+
+// #height header
+$header-height: 82px;
+// #endheight header
+
+// #region Font
+$fs-normal: 16px;
+$fs-lg: 20px;
+$fs-xl: 32px;
+// #endregion Font
+
+// #region Breakpoint
+$breakpoint-xs: 0;
+$breakpoint-sm: 640px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 1024px;
+$breakpoint-xl: 1536px;
+$breakpoint-xxl: 1920px;
+// #endregion Breakpoint

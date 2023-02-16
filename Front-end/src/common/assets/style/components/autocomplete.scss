@@ -1,0 +1,78 @@
+.MuiFormGroup-root.c-filter-select {
+  display: flex;
+  border: 1px solid $color-gray;
+
+  border-radius: 5px;
+
+  @include xs() {
+    flex-direction: column;
+
+    .MuiFormLabel-root {
+      border-right: 0;
+    }
+  }
+
+  @include lg() {
+    flex-direction: row;
+
+    .MuiFormLabel-root {
+      border-right: 1px solid $color-gray;
+    }
+  }
+
+  .MuiFormLabel-root {
+    min-width: 115px;
+    background-color: $color-light-gray;
+    padding: 6px;
+
+    font-weight: 500;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .MuiAutocomplete-root {
+    flex: 1 1;
+
+    .MuiOutlinedInput-notchedOutline {
+      border: none;
+    }
+  }
+
+  .MuiAutocomplete-clearIndicator {
+    display: none;
+  }
+}
+
+.MuiAutocomplete-root.c-autocomplete {
+  .MuiOutlinedInput-root {
+    padding: 0;
+    padding-right: 39px !important;
+
+    input {
+      padding: 9px 8px 8px 15px;
+    }
+  }
+}
+.Mui-error {
+  fieldset {
+    border-color: $color-red !important;
+    z-index: 999;
+  }
+}
+textarea.Mui-error {
+  border-color: $color-red;
+}
+
+.input__autocomplete {
+  label,
+  legend {
+    display: none;
+  }
+}
+
+.MuiAutocomplete-paper {
+  box-shadow: 0px 5px 5px -3px rgb(0 0 0 / 20%),
+    0px 8px 10px 1px rgb(0 0 0 / 14%), 0px 3px 14px 2px rgb(0 0 0 / 12%) !important;
+}

@@ -1,0 +1,54 @@
+#table th,
+#table td {
+  padding: 0;
+}
+
+table {
+  width: 100%;
+
+  th {
+    text-align: unset;
+    color: $color-primary;
+  }
+
+  th > div {
+    font-weight: 700;
+  }
+
+  th > div,
+  td > div {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 10px 0;
+    padding-right: 20px;
+    font-size: 16px;
+  }
+}
+.MuiTableCell-root {
+  border-right: 1px solid rgba(224, 224, 224, 1);
+  white-space: nowrap;
+  max-width: 20rem;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  cursor: default;
+  // vertical-align: unset !important;
+  padding: 8px 8px 9px !important;
+  p {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    &:hover {
+      cursor: default;
+    }
+  }
+  span {
+    color: #d9d9d9;
+    font-weight: 400;
+    font-size: 16px;
+  }
+}
+
+.MuiTableCell-root:last-child {
+  border-right: none;
+}

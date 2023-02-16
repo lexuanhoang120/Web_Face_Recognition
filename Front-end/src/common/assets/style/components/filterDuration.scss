@@ -1,0 +1,17 @@
+.c-duration {
+  align-items: center;
+  & * {
+    font-family: "Montserrat" !important;
+    color: black !important;
+    font-size: 15px !important;
+  }
+  label {
+    font-weight: 600;
+    min-width: 100px;
+    padding-left: 20px;
+  }
+  .MuiFormControl-root {
+    max-width: 110px;
+    width: 110px;
+  }
+}

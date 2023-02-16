@@ -1,0 +1,35 @@
+#list-item.Mui-selected {
+  background-color: white;
+
+  .list-item__text {
+    color: $color-primary;
+  }
+  .list-item__icon svg path {
+    fill: $color-primary;
+  }
+}
+
+.list-item {
+  &__text {
+    color: white;
+    font-size: 18px;
+
+    .MuiTypography-root {
+      font-weight: 700;
+      font-size: 18px;
+    }
+  }
+}
+
+#list-item.list-item {
+  padding: 24px 30px;
+  border: 1px solid $color-primary;
+}
+
+#list-item .list-item__icon {
+  display: flex;
+  align-items: center;
+  min-height: 32px;
+  color: white;
+  transition: all 1s linear;
+}

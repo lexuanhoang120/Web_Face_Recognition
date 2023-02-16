@@ -1,0 +1,35 @@
+.MuiBox-root {
+  .c-datepicker {
+    input {
+      padding: 9px 8px 8px 15px;
+    }
+    .MuiOutlinedInput-root {
+      display: flex;
+      justify-content: space-between;
+    }
+    .MuiOutlinedInput-notchedOutline {
+      border: 0px;
+    }
+
+    .MuiTextField-root {
+      border-radius: 4.8px;
+      overflow: hidden;
+      border: 1px solid rgba(0, 0, 0, 0.4);
+    }
+    .MuiTextField-root:has(.MuiOutlinedInput-input:focus) {
+      border: 1px solid #1976d2 !important;
+    }
+  }
+  .error_date {
+    .MuiTextField-root:has(.MuiOutlinedInput-input:focus) {
+      border: 1px solid #b72511 !important;
+    }
+  }
+}
+
+.MuiTypography-caption:nth-child(n)::after {
+  display: none !important;
+}
+.error_date .MuiTextField-root {
+  border: 1px solid #b72511 !important;
+}

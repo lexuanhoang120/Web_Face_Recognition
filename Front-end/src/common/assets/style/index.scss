@@ -1,0 +1,136 @@
+@import "custom";
+@import "_variables";
+@import "mixin";
+@import "overwrite";
+
+@import "layouts/index";
+@import "others/index";
+@import "components/index";
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  scroll-behavior: smooth;
+
+  font-family: "Roboto", sans-serif;
+}
+
+html body {
+  background-color: $color-background;
+
+  // Color * required
+  .required-input {
+    color: #dc3545;
+    font-size: 1.2rem;
+  }
+
+  .button-open-modal {
+    display: flex;
+    justify-content: flex-end;
+
+    .icon-button {
+      margin-left: 20px;
+    }
+
+    @media (max-width: 640px) {
+      justify-content: flex-start;
+
+      .icon-button:first-child {
+        margin-left: 0;
+      }
+    }
+  }
+
+  // Button add, delete, update, export file, send mail
+  .button-addnew,
+  .button-export-newfile,
+  .button-sendemail {
+    background-color: $color-button;
+  }
+
+  .button-addnew.disabled,
+  .button-export-newfile.disabled,
+  .button-sendemail.disabled {
+    cursor: default;
+    opacity: 0.2;
+  }
+
+  .button-addnew:hover,
+  .button-export-newfile:hover,
+  .button-sendemail:hover {
+    background-color: #4a91b9;
+  }
+
+  .button-update {
+    background-color: $color-warning;
+  }
+
+  .button-update.disabled {
+    cursor: default;
+    opacity: 0.2;
+  }
+
+  .button-update:hover {
+    background-color: #ffca44;
+  }
+
+  .button-delete {
+    background-color: $color-error;
+  }
+
+  .button-delete.disabled {
+    cursor: default;
+    opacity: 0.2;
+  }
+
+  .button-delete:hover {
+    background-color: #c44545;
+  }
+
+  // Form manual
+  .manual {
+    height: unset !important;
+    overflow-y: unset !important;
+
+    .info-item {
+      border: none;
+
+      margin-bottom: 0;
+    }
+  }
+
+  .form-wrap .unset-height {
+    height: unset;
+    max-height: unset;
+  }
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow-x: hidden;
+  overflow-y: auto;
+  height: unset;
+
+  main {
+    flex: 1 1;
+    overflow-x: auto;
+    padding: 42px 10px 0;
+    @media only screen and (max-width: 640px) {
+      padding: 24px 0;
+    }
+  }
+}
+
+.mb-2 {
+  margin-bottom: 20px !important;
+}
+
+a {
+  text-decoration: none;
+}

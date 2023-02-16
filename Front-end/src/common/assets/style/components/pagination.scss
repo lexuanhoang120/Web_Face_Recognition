@@ -1,0 +1,107 @@
+@import "/src/common/assets/style/index.scss";
+
+#root .MuiPaginationItem-root {
+  border: 1px solid #edf6fb;
+  padding: 13px 25px;
+  border-radius: 4.8px 0px 0px 4.8px;
+  height: auto;
+  color: #0d6efd;
+  @media only screen and (max-width: 640px) {
+    margin: 10px 0;
+  }
+}
+.MuiPagination-ul {
+  flex-wrap: nowrap !important;
+}
+#root .MuiPaginationItem-root.Mui-selected {
+  color: #fff;
+  background-color: $color-primary;
+}
+#root .pagination_total {
+  @media only screen and (max-width: 640px) {
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.pagination_wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  @media only screen and (max-width: 1024px) {
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 20px;
+    gap: 0;
+  }
+  @media only screen and (max-width: 640px) {
+    margin: 0;
+  }
+}
+.pagination_left,
+.pagination_right {
+  display: flex;
+  align-items: center;
+  @media only screen and (max-width: 1024px) {
+    width: 100%;
+    margin: 10px;
+    justify-content: space-around;
+  }
+}
+.pagination_left {
+  @media only screen and (max-width: 640px) {
+    justify-content: flex-end;
+    flex-direction: column;
+    margin: 0;
+  }
+}
+.pagination_right {
+  @media only screen and (max-width: 640px) {
+    justify-content: flex-start;
+    justify-content: space-around !important;
+  }
+}
+.pagination_total {
+  margin-right: 20px !important;
+  @media only screen and (max-width: 640px) {
+    margin: 0;
+  }
+}
+
+.pagination_select {
+  margin: 0 40px;
+  .MuiOutlinedInput-input {
+    padding: 12px 32px 10px 14px !important;
+  }
+  @media only screen and (max-width: 1024px) {
+    width: 120px;
+    margin: 0;
+  }
+  @media only screen and (max-width: 640px) {
+    margin: 10px 0;
+  }
+}
+
+.pagination_goto {
+  display: flex;
+  align-items: center;
+  @media only screen and (max-width: 1024px) {
+    // width: 45%;
+    // margin-left: 20%;
+  }
+  @media only screen and (max-width: 640px) {
+    justify-content: center;
+    margin-left: 0;
+  }
+}
+#go_to_page {
+  width: 80px;
+  text-align: center;
+  padding: 10px !important;
+  @media only screen and (max-width: 640px) {
+    width: 30px;
+  }
+}

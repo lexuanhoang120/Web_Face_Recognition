@@ -1,0 +1,49 @@
+@import "./variables";
+
+@mixin flex($aligin-item, $justify-content) {
+  display: flex;
+  align-items: $aligin-item;
+  justify-content: $justify-content;
+}
+
+@mixin breakpoint($breakpoint: 1024px) {
+  @media only screen and (min-width: $breakpoint) {
+    @content;
+  }
+}
+
+@mixin xs {
+  @include breakpoint($breakpoint-xs) {
+    @content;
+  }
+}
+
+@mixin sm {
+  @include breakpoint($breakpoint-sm) {
+    @content;
+  }
+}
+
+@mixin md {
+  @include breakpoint($breakpoint-md) {
+    @content;
+  }
+}
+
+@mixin lg {
+  @include breakpoint($breakpoint-lg) {
+    @content;
+  }
+}
+
+@mixin xl {
+  @include breakpoint($breakpoint-xl) {
+    @content;
+  }
+}
+
+@mixin xxl {
+  @include breakpoint($breakpoint-xxl) {
+    @content;
+  }
+}

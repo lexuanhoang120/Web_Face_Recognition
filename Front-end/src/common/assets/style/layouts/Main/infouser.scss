@@ -1,0 +1,55 @@
+.info-user {
+  .MuiButton-root {
+    padding: 10px 0;
+  }
+
+  .info-user &__wrap__user {
+    padding-left: 25px;
+  }
+
+  &__user {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: white;
+    text-transform: none;
+    padding: 0 20px 0 15px;
+    @media only screen and (max-width: 717px) {
+      display: none;
+    }
+
+    .info-user &__name {
+      margin: 0;
+      line-height: unset;
+    }
+
+    .info-user &__name {
+      font-size: 18px;
+    }
+  }
+
+  &__toggle {
+    path {
+      color: white;
+    }
+  }
+}
+
+#fade-menu .MuiPopover-paper {
+  top: 67px !important;
+  width: 207px;
+  right: 3%;
+  left: unset !important;
+  @media only screen and (max-width: 1024px) {
+    width: 210px;
+    right: 10%;
+  }
+  @media only screen and (max-width: 717px) {
+    width: 135px;
+    right: 8%;
+  }
+  @media only screen and (max-width: 550px) {
+    width: 135px;
+    right: 19%;
+  }
+}

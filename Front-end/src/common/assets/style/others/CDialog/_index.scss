@@ -1,0 +1,85 @@
+// !WARN: SCSS ?????? (can)
+.confirm-dialog {
+  // Style for theme dialog
+  & .MuiDialog-container {
+    & .MuiDialog-paper {
+      box-shadow: none;
+      width: 312px;
+      height: 249px;
+      border-radius: 28px;
+      border: 2px solid blue;
+      background-color: white;
+      padding: 24px;
+      text-align: center;
+      & last-child {
+        text-align: right;
+      }
+      & > .MuiBox-root {
+        position: relative;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      & svg {
+        & > path {
+          stroke: blue;
+        }
+      }
+    }
+  }
+  &.MuiWarning {
+    & .MuiDialog-container {
+      & .MuiDialog-paper {
+        border-color: #ffb800;
+        & svg {
+          & > path {
+            stroke: #ffb800;
+          }
+        }
+      }
+    }
+  }
+  &.MuiError {
+    & .MuiDialog-container {
+      & .MuiDialog-paper {
+        border-color: #ff0000;
+        & svg {
+          & > path {
+            stroke: #ff0000;
+          }
+        }
+      }
+    }
+  }
+
+  // Style for dialog content
+  .dialog-title {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    margin: 22px 0 16px;
+  }
+  .dialog-content {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .button-box {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    .dialog-button {
+      height: 40px;
+      min-width: 70px;
+      border-radius: 11px;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 20px;
+      &.deleteable {
+        background-color: #117db7;
+        color: white;
+      }
+    }
+  }
+}
